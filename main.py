@@ -1,8 +1,4 @@
-from fastapi import FastAPI
+if __name__ == "__main__":
+    from uvicorn import run
 
-app = FastAPI()
-
-
-@app.get("/")
-def index():
-    return {"message": "hello"}
+    run("app.main:app", reload=True)

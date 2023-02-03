@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/*
+ * File       : style.css
+ * Author     : STUDIO-JT (Chaehee)
+ * Guideline  : JTstyle.2.0
+ *
+ * SUMMARY:
+ * 1) 
+ */
+
+
+
+/* **************************************** *
+ * 
+ * **************************************** */
+ 
+/* sidebar */
+.jt-admin-container { display: grid; grid-template-columns: 1fr 5fr; }
+.jt-admin-sidebar { display: block; height: 100vh; overflow-y: auto; border-right: 1px solid #f1f1f1; position: -webkit-sticky; position: sticky; top: 0; }
+.jt-admin-logo { display: inline-block; font-size: 20px; color: #000; text-decoration: none; padding: 45px 20px; }
+.jt-admin-menu { padding-left: 0; text-align: left; }
+.jt-admin-menu__item > a { display: block; padding: 12px 20px; color: #666; text-decoration: none; font-size: 0; }
+.jt-admin-menu__item > a[aria-expanded="true"] { font-weight: bold; color: #000; background: #f8f8f8; }
+.jt-admin-menu__item > a span { display: inline-block; vertical-align: middle; padding-left: 12px; font-size: 15px; }
+.jt-admin-menu__item > a:hover { background: #f8f8f8; }
+.jt-admin-menu__item--active > a { color: #000; font-weight: bold; }
+.jt-admin-menu__sub > ul { padding-left: 0; }
+.jt-admin-menu__sub > ul > li > a { display: block; color: #666; text-decoration: none; padding: 12px 20px 12px 48px; font-size: 14px; }
+.jt-admin-menu__sub > ul > li > a:hover { background: #f8f8f8; }
+.jt-admin-menu__sub > ul > li.active > a { font-weight: bold; color: #000;}
+
+.jt-admin-content__nav { width: 100%; height: 60px; border-bottom: 1px solid #f1f1f1; background: #fff; }
+
+.jt-admin-gohome { position: absolute; top: 21px; color: #666; text-decoration: none; font-size: 0; }
+.jt-admin-gohome i { display: inline-block; vertical-align: middle; margin-right: 6px; }
+.jt-admin-gohome span { display: inline-block; vertical-align: middle; font-size: 14px; }
+
+.jt-admin-user__profile { position: absolute; top: 10px; right: 40px; text-decoration: none; color: #000; font-size: 0; }
+.jt-admin-user__profile figure { display: inline-block; vertical-align: middle; width: 40px; height: 40px; border-radius: 10px; overflow: hidden; margin-bottom: 0; margin-left: 10px; }
+.jt-admin-user__profile figure img { max-width: 100%; height: auto; }
+.jt-admin-user__profile span { display: inline-block; vertical-align: middle; font-size: 14px; }
+
+.jt-admin-content__header h1 a { color: inherit; text-decoration: none; }
+
+
+/* custom component */
+.jt-callout { padding: 1.25rem; border: 1px solid #dedede; }
+
+.border-left-primary { border-left: .25rem solid #0d6efd!important }
+.border-bottom-primary { border-bottom: .25rem solid #0d6efd!important }
+.border-left-secondary { border-left: .25rem solid #6c757d!important }
+.border-bottom-secondary { border-bottom: .25rem solid #6c757d!important }
+.border-left-success { border-left: .25rem solid #198754!important }
+.border-bottom-success { border-bottom: .25rem solid #198754!important }
+.border-left-info { border-left: .25rem solid #0dcaf0!important }
+.border-bottom-info { border-bottom: .25rem solid #0dcaf0!important }
+.border-left-warning { border-left: .25rem solid #ffc107!important }
+.border-bottom-warning { border-bottom: .25rem solid #ffc107!important }
+.border-left-danger { border-left: .25rem solid #dc3545!important }
+.border-bottom-danger { border-bottom: .25rem solid #dc3545!important }
+.border-left-light { border-left: .25rem solid #f8f9fa!important }
+.border-bottom-light { border-bottom: .25rem solid #f8f9fa!important }
+.border-left-dark { border-left: .25rem solid #212529!important }
+.border-bottom-dark { border-bottom: .25rem solid #212529!important }
+
+.card-header[data-bs-toggle] { color: #000; text-decoration: none; }
+
+.table tbody td a { color: inherit; text-decoration: none; }
+.table tbody td a.btn { background: #f8f8f8;  }

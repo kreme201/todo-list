@@ -4,7 +4,7 @@ from typing import Any, List, Union
 
 from fastapi import APIRouter
 
-router = APIRouter(prefix="/todo")
+router = APIRouter(prefix="/todo", tags=["TODO"])
 
 
 class Todo:
